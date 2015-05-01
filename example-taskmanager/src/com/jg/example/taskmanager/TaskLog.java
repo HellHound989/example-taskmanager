@@ -7,13 +7,14 @@ public class TaskLog {
 	
 	static ClassLoader cLoader = null;
 	static Class<?> cLogger;
+	static Object oLogger;
 	private static boolean enabled = false;
 	
 	public static void log(String func, String text) throws NoSuchMethodException, SecurityException, 
 				IllegalAccessException, IllegalArgumentException, InvocationTargetException {
 		if (enabled) {
-			Method method = cLogger.getMethod(func, new Class[] { Object.class });
-			method.invoke(cLogger, new Object[] { text });
+			Method method = cLogger.getMethod(func, String.class);
+			method.invoke(oLogger, new Object[] { text });
 		}
 	}
 	
@@ -22,9 +23,9 @@ public class TaskLog {
 				IllegalArgumentException, InvocationTargetException {
 		if (cLoader == null) {
 			cLoader = TaskLog.class.getClassLoader();
-			cLogger = (Class<?>) cLoader.loadClass(loggerClass).newInstance();
-			Method method = cLogger.getMethod("getLogger", new Class[] { String.class });
-			method.invoke(cLogger, new Object[] { (String) logger });
+			cLogger = cLoader.loadClass(loggerClass);
+			Method method = cLogger.getMethod("getLogger", String.class);
+			oLogger = method.invoke(null, new Object[] { logger });
 		}
 		enabled = true;
 	}
