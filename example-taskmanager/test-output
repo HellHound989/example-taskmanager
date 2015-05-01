@@ -1,0 +1,23 @@
+MyTaskA has been instantialized and set to run every 2 minutes
+MyTaskB has been instantialized and set to run every 45 seconds
+Current start time: [04:47:32 PM]
+MyTaskB.runTask() has been called! - Time is [04:48:17 PM] - Has now been run [1] times
+MyTaskB.runTask() has been called! - Time is [04:49:02 PM] - Has now been run [2] times
+MyTaskA.runTask() has been called! - Time is [04:49:32 PM] - Has now been run [1] times
+MyTaskB.runTask() has been called! - Time is [04:49:47 PM] - Has now been run [3] times
+MyTaskB.runTask() has been called! - Time is [04:50:32 PM] - Has now been run [4] times
+MyTaskB.runTask() has been called! - Time is [04:51:17 PM] - Has now been run [5] times
+MyTaskA.runTask() has been called! - Time is [04:51:32 PM] - Has now been run [2] times
+MyTaskB.runTask() has been called! - Time is [04:52:02 PM] - Has now been run [6] times
+MyTaskB.runTask() has been called! - Time is [04:52:47 PM] - Has now been run [7] times
+MyTaskA.runTask() has been called! - Time is [04:53:32 PM] - Has now been run [3] times
+MyTaskB.runTask() has been called! - Time is [04:53:32 PM] - Has now been run [8] times
+MyTaskB.runTask() has been called! - Time is [04:54:17 PM] - Has now been run [9] times
+MyTaskB.runTask() has been called! - Time is [04:55:02 PM] - Has now been run [10] times
+MyTaskA.runTask() has been called! - Time is [04:55:32 PM] - Has now been run [4] times
+MyTaskB.runTask() has been called! - Time is [04:55:47 PM] - Has now been run [11] times
+MyTaskB.runTask() has been called! - Time is [04:56:32 PM] - Has now been run [12] times
+MyTaskB.runTask() has been called! - Time is [04:57:17 PM] - Has now been run [13] times
+MyTaskA.runTask() has been called! - Time is [04:57:32 PM] - Has now been run [5] times
+MyTaskB.runTask() has been called! - Time is [04:58:02 PM] - Has now been run [14] times
+Application has ended!
