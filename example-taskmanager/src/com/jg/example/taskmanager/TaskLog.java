@@ -33,5 +33,4 @@ public class TaskLog {
 	public static void disableLogging() {
 		enabled = false;
 	}
-	
 }
