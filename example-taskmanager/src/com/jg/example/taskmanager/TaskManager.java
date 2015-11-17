@@ -24,7 +24,7 @@ public class TaskManager {
 	
 	public void startTasks() {
 		this.timerThread.setDaemon(true);
-		this.timerThread.setName("WNTimerThread");
+		this.timerThread.setName("TimerThread");
 		this.timerThread.start();
 	}
 	
